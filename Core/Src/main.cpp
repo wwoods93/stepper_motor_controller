@@ -115,9 +115,16 @@ int main()
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
+    uint32_t count = 0U;
     while (1)
     {
         /* USER CODE END WHILE */
+        if (count > 100000U)
+        {
+            HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+            count = 0;
+        }
+        ++count;
 
         /* USER CODE BEGIN 3 */
     }

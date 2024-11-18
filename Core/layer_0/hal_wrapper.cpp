@@ -28,5 +28,5 @@
 
 /* layer_n_meta_structure includes */
 
-/* halw_wrapper header */
+/* hal_wrapper header */
 #include "hal_wrapper.h"
