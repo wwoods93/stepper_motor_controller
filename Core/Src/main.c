@@ -1,32 +1,32 @@
 ///* USER CODE BEGIN Header */
-///////////**
-//////////  ******************************************************************************
-//////////  * @file           : main.c
-//////////  * @brief          : Main program body
-//////////  ******************************************************************************
-//////////  * @attention
-//////////  *
-//////////  * Copyright (c) 2024 STMicroelectronics.
-//////////  * All rights reserved.
-//////////  *
-//////////  * This software is licensed under terms that can be found in the LICENSE file
-//////////  * in the root directory of this software component.
-//////////  * If no LICENSE file comes with this software, it is provided AS-IS.
-//////////  *
-//////////  ******************************************************************************
-//////////  */
+/////////////**
+////////////  ******************************************************************************
+////////////  * @file           : main.c
+////////////  * @brief          : Main program body
+////////////  ******************************************************************************
+////////////  * @attention
+////////////  *
+////////////  * Copyright (c) 2024 STMicroelectronics.
+////////////  * All rights reserved.
+////////////  *
+////////////  * This software is licensed under terms that can be found in the LICENSE file
+////////////  * in the root directory of this software component.
+////////////  * If no LICENSE file comes with this software, it is provided AS-IS.
+////////////  *
+////////////  ******************************************************************************
+////////////  */
 ///* USER CODE END Header */
 ///* Includes ------------------------------------------------------------------*/
 //#include "main.h"
 //
 ///* Private includes ----------------------------------------------------------*/
 ///* USER CODE BEGIN Includes */
-//////////
+////////////
 ///* USER CODE END Includes */
 //
 ///* Private typedef -----------------------------------------------------------*/
 ///* USER CODE BEGIN PTD */
-//////////
+////////////
 ///* USER CODE END PTD */
 //
 ///* Private define ------------------------------------------------------------*/
@@ -35,7 +35,7 @@
 //
 ///* Private macro -------------------------------------------------------------*/
 ///* USER CODE BEGIN PM */
-//////////
+////////////
 ///* USER CODE END PM */
 //
 ///* Private variables ---------------------------------------------------------*/
@@ -56,7 +56,7 @@
 //WWDG_HandleTypeDef hwwdg;
 //
 ///* USER CODE BEGIN PV */
-//////////
+////////////
 ///* USER CODE END PV */
 //
 ///* Private function prototypes -----------------------------------------------*/
@@ -72,12 +72,12 @@
 //static void MX_TIM1_Init(void);
 //static void MX_TIM2_Init(void);
 ///* USER CODE BEGIN PFP */
-//////////
+////////////
 ///* USER CODE END PFP */
 //
 ///* Private user code ---------------------------------------------------------*/
 ///* USER CODE BEGIN 0 */
-//////////
+////////////
 ///* USER CODE END 0 */
 //
 ///**
@@ -87,7 +87,7 @@
 //int main(void)
 //{
 //  /* USER CODE BEGIN 1 */
-//////////
+////////////
 //  /* USER CODE END 1 */
 //
 //  /* MCU Configuration--------------------------------------------------------*/
@@ -96,14 +96,14 @@
 //  HAL_Init();
 //
 //  /* USER CODE BEGIN Init */
-//////////
+////////////
 //  /* USER CODE END Init */
 //
 //  /* Configure the system clock */
 //  SystemClock_Config();
 //
 //  /* USER CODE BEGIN SysInit */
-//////////
+////////////
 //  /* USER CODE END SysInit */
 //
 //  /* Initialize all configured peripherals */
@@ -118,17 +118,17 @@
 //  MX_TIM1_Init();
 //  MX_TIM2_Init();
 //  /* USER CODE BEGIN 2 */
-//////////
+////////////
 //  /* USER CODE END 2 */
 //
 //  /* Infinite loop */
 //  /* USER CODE BEGIN WHILE */
-//////////  while (1)
-//////////  {
+////////////  while (1)
+////////////  {
 //    /* USER CODE END WHILE */
 //
 //    /* USER CODE BEGIN 3 */
-//////////  }
+////////////  }
 //  /* USER CODE END 3 */
 //}
 //
@@ -186,11 +186,11 @@
 //{
 //
 //  /* USER CODE BEGIN CAN1_Init 0 */
-//////////
+////////////
 //  /* USER CODE END CAN1_Init 0 */
 //
 //  /* USER CODE BEGIN CAN1_Init 1 */
-//////////
+////////////
 //  /* USER CODE END CAN1_Init 1 */
 //  hcan1.Instance = CAN1;
 //  hcan1.Init.Prescaler = 16;
@@ -209,7 +209,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN CAN1_Init 2 */
-//////////
+////////////
 //  /* USER CODE END CAN1_Init 2 */
 //
 //}
@@ -223,11 +223,11 @@
 //{
 //
 //  /* USER CODE BEGIN I2C1_Init 0 */
-//////////
+////////////
 //  /* USER CODE END I2C1_Init 0 */
 //
 //  /* USER CODE BEGIN I2C1_Init 1 */
-//////////
+////////////
 //  /* USER CODE END I2C1_Init 1 */
 //  hi2c1.Instance = I2C1;
 //  hi2c1.Init.ClockSpeed = 400000;
@@ -243,7 +243,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN I2C1_Init 2 */
-//////////
+////////////
 //  /* USER CODE END I2C1_Init 2 */
 //
 //}
@@ -257,11 +257,11 @@
 //{
 //
 //  /* USER CODE BEGIN IWDG_Init 0 */
-//////////
+////////////
 //  /* USER CODE END IWDG_Init 0 */
 //
 //  /* USER CODE BEGIN IWDG_Init 1 */
-//////////
+////////////
 //  /* USER CODE END IWDG_Init 1 */
 //  hiwdg.Instance = IWDG;
 //  hiwdg.Init.Prescaler = IWDG_PRESCALER_4;
@@ -271,7 +271,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN IWDG_Init 2 */
-//////////
+////////////
 //  /* USER CODE END IWDG_Init 2 */
 //
 //}
@@ -285,11 +285,11 @@
 //{
 //
 //  /* USER CODE BEGIN SPI2_Init 0 */
-//////////
+////////////
 //  /* USER CODE END SPI2_Init 0 */
 //
 //  /* USER CODE BEGIN SPI2_Init 1 */
-//////////
+////////////
 //  /* USER CODE END SPI2_Init 1 */
 //  /* SPI2 parameter configuration*/
 //  hspi2.Instance = SPI2;
@@ -308,7 +308,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN SPI2_Init 2 */
-//////////
+////////////
 //  /* USER CODE END SPI2_Init 2 */
 //
 //}
@@ -322,7 +322,7 @@
 //{
 //
 //  /* USER CODE BEGIN TIM1_Init 0 */
-////////
+//////////
 //  /* USER CODE END TIM1_Init 0 */
 //
 //  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
@@ -331,7 +331,7 @@
 //  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
 //
 //  /* USER CODE BEGIN TIM1_Init 1 */
-////////
+//////////
 //  /* USER CODE END TIM1_Init 1 */
 //  htim1.Instance = TIM1;
 //  htim1.Init.Prescaler = 24;
@@ -386,7 +386,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN TIM1_Init 2 */
-////////
+//////////
 //  /* USER CODE END TIM1_Init 2 */
 //  HAL_TIM_MspPostInit(&htim1);
 //
@@ -401,14 +401,14 @@
 //{
 //
 //  /* USER CODE BEGIN TIM2_Init 0 */
-////////
+//////////
 //  /* USER CODE END TIM2_Init 0 */
 //
 //  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
 //  TIM_MasterConfigTypeDef sMasterConfig = {0};
 //
 //  /* USER CODE BEGIN TIM2_Init 1 */
-////////
+//////////
 //  /* USER CODE END TIM2_Init 1 */
 //  htim2.Instance = TIM2;
 //  htim2.Init.Prescaler = 24;
@@ -432,7 +432,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN TIM2_Init 2 */
-////////
+//////////
 //  /* USER CODE END TIM2_Init 2 */
 //
 //}
@@ -446,11 +446,11 @@
 //{
 //
 //  /* USER CODE BEGIN USART2_Init 0 */
-//////////
+////////////
 //  /* USER CODE END USART2_Init 0 */
 //
 //  /* USER CODE BEGIN USART2_Init 1 */
-//////////
+////////////
 //  /* USER CODE END USART2_Init 1 */
 //  huart2.Instance = USART2;
 //  huart2.Init.BaudRate = 115200;
@@ -465,7 +465,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN USART2_Init 2 */
-//////////
+////////////
 //  /* USER CODE END USART2_Init 2 */
 //
 //}
@@ -479,11 +479,11 @@
 //{
 //
 //  /* USER CODE BEGIN USART3_Init 0 */
-//////////
+////////////
 //  /* USER CODE END USART3_Init 0 */
 //
 //  /* USER CODE BEGIN USART3_Init 1 */
-//////////
+////////////
 //  /* USER CODE END USART3_Init 1 */
 //  huart3.Instance = USART3;
 //  huart3.Init.BaudRate = 115200;
@@ -498,7 +498,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN USART3_Init 2 */
-//////////
+////////////
 //  /* USER CODE END USART3_Init 2 */
 //
 //}
@@ -512,11 +512,11 @@
 //{
 //
 //  /* USER CODE BEGIN WWDG_Init 0 */
-//////////
+////////////
 //  /* USER CODE END WWDG_Init 0 */
 //
 //  /* USER CODE BEGIN WWDG_Init 1 */
-//////////
+////////////
 //  /* USER CODE END WWDG_Init 1 */
 //  hwwdg.Instance = WWDG;
 //  hwwdg.Init.Prescaler = WWDG_PRESCALER_8;
@@ -528,7 +528,7 @@
 //    Error_Handler();
 //  }
 //  /* USER CODE BEGIN WWDG_Init 2 */
-//////////
+////////////
 //  /* USER CODE END WWDG_Init 2 */
 //
 //}
@@ -661,7 +661,7 @@
 //}
 //
 ///* USER CODE BEGIN 4 */
-//////////
+////////////
 ///* USER CODE END 4 */
 //
 ///**
@@ -671,11 +671,11 @@
 //void Error_Handler(void)
 //{
 //  /* USER CODE BEGIN Error_Handler_Debug */
-//////////  /* User can add his own implementation to report the HAL error return state */
-//////////  __disable_irq();
-//////////  while (1)
-//////////  {
-//////////  }
+////////////  /* User can add his own implementation to report the HAL error return state */
+////////////  __disable_irq();
+////////////  while (1)
+////////////  {
+////////////  }
 //  /* USER CODE END Error_Handler_Debug */
 //}
 //
@@ -690,8 +690,8 @@
 //void assert_failed(uint8_t *file, uint32_t line)
 //{
 //  /* USER CODE BEGIN 6 */
-//////////  /* User can add his own implementation to report the file name and line number,
-//////////     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+////////////  /* User can add his own implementation to report the file name and line number,
+////////////     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
 //  /* USER CODE END 6 */
 //}
 //#endif /* USE_FULL_ASSERT */

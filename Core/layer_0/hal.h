@@ -67,6 +67,8 @@
 
 
 TIM_HandleTypeDef* get_timer_1_handle();
+TIM_HandleTypeDef* get_timer_2_handle();
+
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 void MX_TIM1_Init();
 void MX_TIM2_Init();

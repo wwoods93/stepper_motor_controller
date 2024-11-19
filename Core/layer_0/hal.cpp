@@ -47,6 +47,11 @@ TIM_HandleTypeDef* get_timer_1_handle()
     return &htim1;
 }
 
+TIM_HandleTypeDef* get_timer_2_handle()
+{
+    return &htim2;
+}
+
 void SystemClock_Config()
 {
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -96,13 +101,12 @@ void MX_TIM1_Init()
     TIM_OC_InitTypeDef sConfigOC = {0};
     TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
 
-
     htim1.Instance = TIM1;
-    htim1.Init.Prescaler = 24;
+    htim1.Init.Prescaler = 23 - 1;
     htim1.Init.CounterMode = TIM_COUNTERMODE_DOWN;
-    htim1.Init.Period = 260;
+    htim1.Init.Period = 100;
     htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-    htim1.Init.RepetitionCounter = 255;
+    htim1.Init.RepetitionCounter = 10;
     htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
     if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
     {
@@ -124,7 +128,7 @@ void MX_TIM1_Init()
         Error_Handler();
     }
     sConfigOC.OCMode = TIM_OCMODE_PWM1;
-    sConfigOC.Pulse = 260;
+    sConfigOC.Pulse = 30;
     sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
     sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
     sConfigOC.OCFastMode = TIM_OCFAST_ENABLE;
@@ -159,7 +163,7 @@ void MX_TIM2_Init()
     TIM_MasterConfigTypeDef sMasterConfig = {0};
 
     htim2.Instance = TIM2;
-    htim2.Init.Prescaler = 24;
+    htim2.Init.Prescaler = 24-1;
     htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
     htim2.Init.Period = 4294967295;
     htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
